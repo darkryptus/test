@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-const CHROME_PATH = '/data/data/com.termux/files/usr/bin/chromium-browser';
+const CHROME_PATH = '/opt/render/project/.render/chrome/opt/google/chrome/google-chrome';
 const SCREENSHOT_PATH = path.join(__dirname, 'screenshot.png');
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
