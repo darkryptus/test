@@ -56,8 +56,8 @@ app.get('/run', async (req, res) => {
   console.log('[BOT] Opening Aternos sign-in...');
   await page.goto('https://aternos.org/go/', { waitUntil: 'networkidle2' });
 
-  console.log('[BOT] Waiting 10 seconds for login to settle...');
-  await sleep(10000);
+  console.log('[BOT] Waiting 30 seconds for login to settle...');
+  await sleep(30000);
 
   console.log('[BOT] Taking screenshot...');
   await page.screenshot({
